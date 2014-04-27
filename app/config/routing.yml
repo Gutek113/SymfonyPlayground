@@ -1,0 +1,5 @@
+gt_page:
+    resource: "@GtPageBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
