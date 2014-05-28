@@ -1,7 +1,7 @@
 <?php
-require 'AbstractDBTest.php';
+require 'AbstractDatabaseTestCase.php';
 
-class AccountManagerDBTest extends AbstractDBTest
+class AccountManagerDBTest extends AbstractDatabaseTestCase
 {
     protected function getDataSet()
     {
