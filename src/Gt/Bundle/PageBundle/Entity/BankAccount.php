@@ -55,7 +55,7 @@ class BankAccount
     public function setBalance($balance)
     {
         $this->balance = $balance;
-
+    
         return $this;
     }
 

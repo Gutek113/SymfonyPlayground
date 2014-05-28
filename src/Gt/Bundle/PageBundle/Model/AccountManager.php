@@ -32,14 +32,18 @@ class AccountManager
         return $this->bankAccount->getBalance();
     }
 
-    public function withdraw()
+    /**
+     * Method is responsible for money withdrawal. 
+     * Method diminish bank account balance.
+     * 
+     * @param  float $money 
+     * @return float        
+     */
+    public function withdraw($money)
     {
-        // TODO: write logic here
-    }
 
-    public function getBankAccount()
-    {
-        return $this->bankAccount;
+        $this->bankAccount->setBalance($this->bankAccount->getBalance() - $money);
+        return $this->bankAccount->getBalance();   
     }
 
     public function setBankAccount(BankAccount $bankAccount)
@@ -66,4 +70,9 @@ class AccountManager
         return $bankAccount;
     }
 
+
+    public function getBankAccount()
+    {
+        return $this->bankAccount;
+    }
 }
