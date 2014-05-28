@@ -40,9 +40,9 @@ class AccountManagerSpec extends ObjectBehavior
     
     function it_should_create_bank_account(EntityManager $entityManager)
     {        
+        $bankAccountNumber = 123;
         $this->setEm($entityManager);
-        $test = $this->create(234)->shouldHaveType('Gt\Bundle\PageBundle\Entity\BankAccount');
-        
+        $this->create($bankAccountNumber)->shouldHaveType('Gt\Bundle\PageBundle\Entity\BankAccount');
     }
 
 }

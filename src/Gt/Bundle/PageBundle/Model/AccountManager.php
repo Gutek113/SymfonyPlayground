@@ -66,8 +66,9 @@ class AccountManager
         $bankAccount->setAccountNumber($accountNumber);
         $this->em->persist($bankAccount);
         $this->em->flush();
+        $this->bankAccount = $bankAccount;
         
-        return $bankAccount;
+        return $this->bankAccount;
     }
 
 
