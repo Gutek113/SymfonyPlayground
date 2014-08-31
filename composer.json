@@ -21,7 +21,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "phpspec/phpspec": "2.0.*@dev",
         "phpunit/phpunit": "4.0.*",
-        "phpunit/dbunit": ">=1.2"
+        "phpunit/dbunit": ">=1.2",
+        "behat/behat": "v2.5.3"
     },
     "scripts": {
         "post-install-cmd": [
