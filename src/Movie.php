@@ -3,6 +3,9 @@
 class Movie
 {
 
+    /**
+     * @int rating
+     */
     public function getRating()
     {
         return 5;
