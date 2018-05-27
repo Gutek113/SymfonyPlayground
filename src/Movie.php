@@ -11,6 +11,11 @@ class Movie
         return 5;
     }
 
+    /**
+     * Title of the movie
+     * 
+     * @return string
+     */
     public function getTitle()
     {
         return "Star Wars";

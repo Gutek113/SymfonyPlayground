@@ -4,7 +4,7 @@ class Markdown
 {
 
     /**
-     * Cool title.
+     * Cool title. Awesome title.
      * 
      * @return string
      */
